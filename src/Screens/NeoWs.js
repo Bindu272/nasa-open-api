@@ -18,11 +18,14 @@ const NeoWs = () => {
         // Extracting data from the response
         const data = response.data.near_earth_objects;
         console.log(data,'NEOWS')
+        
         let neoArray = [];
         // Extracting NEO data and pushing it into an array
         for (const date in data) {
           neoArray = neoArray.concat(data[date]);
+       
         }
+       
         setNeoData(neoArray);
         setLoading(false);
       } catch (error) {
@@ -38,14 +41,18 @@ const NeoWs = () => {
     { dataField: 'name', text: 'Name', sort: true },
     { dataField: 'close_approach_data[0].miss_distance.miles', text: 'Miss Distance (Miles)', sort: true },
     { dataField: 'is_potentially_hazardous_asteroid', text: 'Potentially Hazardous', sort: true },
+    {dataField:'nasa_jpl_url', text:'NASA JPL URL', sort:true},
+    {dataField:'neo_reference_id', text:'Neo Reference', sort:true},
+   
   ];
 
   return (
     <div>
-      <h2>NEO Data</h2>
+      <h2 >NEO Data</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (
+        <div className=" p-3">
         <BootstrapTable
           keyField="id"
           data={neoData}
@@ -55,7 +62,9 @@ const NeoWs = () => {
           hover
           bootstrap4
           className="neo-table"
+        
         />
+        </div>
       )}
     </div>
   );

@@ -41,3 +41,32 @@
   justify-content: space-around;
  
 }
+.table-striped>tbody>tr:nth-child(2n+2)>td,
+.table-striped>tbody>tr:nth-child(2n+2)>th {
+    background-color:
+        #815c19;
+}
+.table-striped>tbody>tr:nth-child(2n+1)>td,
+.table-striped>tbody>tr:nth-child(2n+1)>th {
+    background-color:
+    #e4990d ;
+}
+.table {
+  font-size: large;
+ width: auto;
+
+}
+
+.react-bootstrap-table-page-btns-ul {
+float:none !important;
+ 
+}
+.dropdown-menu {
+  position: absolute;
+  top: -11.5rem;
+  left: 0px;
+  min-width: 1.5rem !important;
+
+
+}
+
