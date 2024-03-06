@@ -31,7 +31,7 @@ const EarthImagery = () => {
   return (
     <div>
       <h2>Earth Imagery</h2>
-      <img src={imageUrl} alt="Earth Imagery" />
+      <img src={imageUrl} alt="Earth Imagery"  />
     </div>
   );
 };

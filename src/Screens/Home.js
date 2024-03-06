@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "./../Components/Header";
-import Footer from "./../Components/Footer";
 import NaturalImages from "./NaturalImages";
-import EarthImagery from "./EarthImagery";
 
-const Home = (props) => {
+
+const Home = () => {
   return (
-    <div>
+    <div className="pt-3">
 
   <NaturalImages/>
   

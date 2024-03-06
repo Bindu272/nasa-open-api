@@ -48,7 +48,7 @@ const NeoWs = () => {
 
   return (
     <div>
-      <h2 >NEO Data</h2>
+      <h2 >Asteroids - NeoWs (Near Earth Object Web Service)</h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

@@ -24,7 +24,7 @@ function App() {
           <Route path="/earthimagery" element={<EarthImagery />} />
 
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         </div>
       </Router>
   
