@@ -36,37 +36,35 @@
     transform: rotate(360deg);
   }
 }
-.Header{
+.Header {
   display: flex;
   justify-content: space-around;
- 
+  padding-top: 20px;
+  font-size: larger;
+  background-color: #282c34;
+  text-transform: capitalize;
+  a{text-decoration: none;
+  color: #ffffff;}
 }
-.table-striped>tbody>tr:nth-child(2n+2)>td,
-.table-striped>tbody>tr:nth-child(2n+2)>th {
-    background-color:
-        #815c19;
+.table-striped > tbody > tr:nth-child(2n + 2) > td,
+.table-striped > tbody > tr:nth-child(2n + 2) > th {
+  background-color: #815c19;
 }
-.table-striped>tbody>tr:nth-child(2n+1)>td,
-.table-striped>tbody>tr:nth-child(2n+1)>th {
-    background-color:
-    #e4990d ;
+.table-striped > tbody > tr:nth-child(2n + 1) > td,
+.table-striped > tbody > tr:nth-child(2n + 1) > th {
+  background-color: #e4990d;
 }
 .table {
   font-size: large;
- width: auto;
-
+  width: auto;
 }
 
 .react-bootstrap-table-page-btns-ul {
-float:none !important;
- 
+  float: none !important;
 }
 .dropdown-menu {
   position: absolute;
   top: -11.5rem;
   left: 0px;
   min-width: 1.5rem !important;
-
-
 }
-
